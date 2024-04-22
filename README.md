@@ -1,66 +1,66 @@
 # angular-weather-app
 
-Erstellen Sie eine Angular Webanwendung, die die Wetterdaten für eine vom Anwender definierten Ort anzeigt.
+Create an Angular web application that displays weather data for a user-defined location.
 
 ![](docs/weather-app-angular_small.png)
 
-👉 ``Forke`` das Repository und löse die Aufgaben in einem ``Lösungsbranch`` 👈
+👉 ``Fork`` the repository and solve the tasks in a ``solution branch`` 👈
 
 
 # REST API
-Die Wetterdaten sollen über folgenden Service angerufen werden: https://www.weatherapi.com
+The weather data should be accessed via the following service: https://www.weatherapi.com
 
-Der Service stellt einen Explorer bereit, über den die API getestet werden kann: https://www.weatherapi.com/api-explorer.aspx
+The service provides an explorer through which the API can be tested: https://www.weatherapi.com/api-explorer.aspx
 
-Der API Key wird per E-Mail versendet.
+The API key is sent via email.
 
-# Fachliche Anforderungen
-1. Der Anwender soll einen Ort eingeben können
-2. Der Anwender soll ein konkretes Datum im Format `dd.MM.yyyy` eingeben können
-3. Der Anwender soll die Wetterdaten für "Heute", für "Morgen" und für "Heute + 2 Tage" angezeigt bekommen
+# Technical requirements
+1. The user should be able to enter a location
+2. The user should be able to enter a specific date in the format `dd.MM.yyyy`
+3. The user should see the weather data for “Today”, “Tomorrow” and “Today + 2 days”.
 
-## Wetterdaten
-Die Bezeichnung `Wetterdaten` meint folgende Werte:
-- Name des Orts
-- Name der Region
-- Name des Landes
-- Zeitzone
-- Temperatur in C°
-- Gefühlte Temperatur in C°
-- Windgeschwindigkeit in Km/H
-- Windrichtung
-- Wolkenwahrscheinlichkeit in %
-- Regenwahrscheinlichkeit in %
+## Weather data
+The term “weather data” means the following values:
+- Name of the place
+- Name of the region
+- Name of the country
+- Time zone
+- Temperature in C°
+- Felt temperature in C°
+- Wind speed in km/h
+- Wind direction
+- Cloud probability in %
+- Chance of rain in %
 
-### Wetterdaten - Heute
-Für den aktuellen Tag sollen dem Anwender die aktuellen Wetterdaten sowie Prognosedaten angezeigt werden.
-Die Prognosedaten ergebensich aus den Wetterdaten, welche wie folgt zeitlich aggregiert werden:
-  - Morgens (Durchschnittswerte von 06 - 12 Uhr)
-  - Mittags (Durchschnittswerte von 12 - 18 Uhr)
-  - Abends (Durchschnittswerte von 18 - 22 Uhr)
-  - Nachts (Durchschnittswerte von 22 - 06 Uhr)
+### Weather data - Today
+The user should be shown the current weather data and forecast data for the current day.
+The forecast data results from the weather data, which are aggregated over time as follows:
+- Morning (average values from 6 a.m. to 12 p.m.)
+- Midday (average from 12 p.m. to 6 p.m.)
+- Evening (average from 6 p.m. to 10 p.m.)
+- At night (average values from 10 p.m. to 6 a.m.)
 
-### Wetterdaten - Morgen | Heute + 2 Tage
-Für diese beiden Varianten sollen wie in der Variante zuvor die Prognosedaten angezeigt werden.
-Die Anzeige der aktuellen Wetterdaten entfallen hierbei.
+### Weather data - Tomorrow | Today + 2 days
+For these two variants, the forecast data should be displayed as in the previous variant.
+The current weather data is no longer displayed.
 
-## Darstellung
-Für die Darstellung der Wetterdaten werden keine Anforderungen gestellt. Sie dürfen selbst entscheiden, wie die Daten dem Anwender angezeigt werden sollen. 
+## Depiction
+There are no requirements for the display of weather data. You can decide for yourself how the data should be displayed to the user.
 
-# Technische Anforderungen
-- Für die Umsetzung der Webanwendung soll das Angular Framework genuzt werden.
-- Funktionen sollen via Unit Tests getestet werden.
-- Dependencies dürfen nach freiem Ermessen installiert und genutzt werden.
+# Technical requirements
+- The Angular Framework should be used to implement the web application.
+- Functions should be tested via unit tests.
+- Dependencies may be installed and used at your own discretion.
 
-# Dokumentation
-Für die Umsetzung bedarf es keiner eigenständigen Dokumentation. Jedoch soll der Code nach eigenem Ermessen mit Kommentaren versehen werden.
+# Documentation
+No independent documentation is required for implementation. However, the code should be provided with comments at your own discretion.
 
-# Fragen & Probleme
+# Questions & Problems
 
-Sollten sich Fragen ergeben oder Probleme auftreten, so versuchen Sie diese bestmöglich anzunehmen/lösen und zu dokumentieren, welche Entscheidungen und Voraussetzungen Sie getroffen haben.
+If questions arise or problems arise, try to accept/solve them as best you can and document what decisions and requirements you have made.
 
-# Interne Notiz
-*kann ignoriert werden*
+# Internal note
+*can be ignored*
 
 ## Build build
 ````shell
